@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+beacon.log
+beacon.log.*
+decoy.docx
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.env
