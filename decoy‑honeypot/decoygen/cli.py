@@ -51,7 +51,7 @@ def validate_output_path(output):
     abs_path = os.path.abspath(output)
     cwd = os.path.abspath(os.getcwd())
 
-    if not abs_path.startswith(cwd):
+    if not abs_path.startswith(cwd + os.sep) and abs_path != cwd:
         raise click.BadParameter(
             f"Output path must be within the current directory (resolved to: {abs_path})"
         )
